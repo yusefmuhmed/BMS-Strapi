@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_proccessing_blood_components",
+  "info": {
+    "name": "BloodComponent",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blood_component": {
+      "model": "blood-component"
+    },
+    "VolumeBydefault": {
+      "type": "decimal"
+    },
+    "MinimumVolume": {
+      "type": "decimal"
+    },
+    "MaximumVolume": {
+      "type": "decimal"
+    },
+    "MinimumPhlebotomyTime": {
+      "type": "decimal"
+    },
+    "Expiration": {
+      "type": "decimal"
+    },
+    "SeparatedAfter": {
+      "type": "decimal"
+    },
+    "SeparatedBefore": {
+      "type": "decimal"
+    },
+    "SortKey": {
+      "type": "integer"
+    }
+  }
+}

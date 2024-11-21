@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_donation_medical_checkup_range_rules",
+  "info": {
+    "name": "Medical Checkup Range Rule",
+    "icon": "balance-scale",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "minimum_normal_male": {
+      "type": "decimal",
+      "required": true,
+      "min": 1
+    },
+    "maximum_normal_male": {
+      "type": "decimal",
+      "required": true,
+      "min": 1
+    },
+    "minimum_normal_female": {
+      "type": "decimal",
+      "required": true,
+      "min": 1
+    },
+    "maximum_normal_female": {
+      "type": "decimal"
+    },
+    "below_minimum_deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ],
+      "default": "TEMPORARY"
+    },
+    "above_maximum_deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ],
+      "default": "TEMPORARY"
+    },
+    "below_minimum_deferral_days": {
+      "type": "integer",
+      "min": 1
+    },
+    "above_maximum_deferral_days": {
+      "type": "integer",
+      "min": 1
+    },
+    "default_value": {
+      "type": "decimal"
+    },
+    "default_value_applied": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

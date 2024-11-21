@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/physician",
+      "handler": "physician.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/physician",
+      "handler": "physician.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/physician",
+      "handler": "physician.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

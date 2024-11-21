@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bag-types",
+      "handler": "bag-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bag-types/count",
+      "handler": "bag-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bag-types/:id",
+      "handler": "bag-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bag-types",
+      "handler": "bag-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bag-types/:id",
+      "handler": "bag-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bag-types/:id",
+      "handler": "bag-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

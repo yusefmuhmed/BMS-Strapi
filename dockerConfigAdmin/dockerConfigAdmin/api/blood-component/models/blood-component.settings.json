@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blood_components",
+  "info": {
+    "name": "Blood Component",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Code": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ShortName": {
+      "type": "string"
+    },
+    "Barcode": {
+      "type": "string"
+    },
+    "CodeToExport": {
+      "type": "string"
+    },
+    "CodeToInvoice": {
+      "type": "string"
+    },
+    "SortKey": {
+      "type": "integer"
+    },
+    "Available": {
+      "type": "boolean",
+      "default": false
+    },
+    "Active": {
+      "type": "boolean",
+      "default": false
+    },
+    "Washing": {
+      "type": "boolean",
+      "default": false
+    },
+    "Cryoprecipitate": {
+      "type": "boolean",
+      "default": false
+    },
+    "Filter": {
+      "type": "boolean",
+      "default": false
+    },
+    "Aliquot": {
+      "type": "boolean",
+      "default": false
+    },
+    "LowVolume": {
+      "type": "boolean",
+      "default": false
+    },
+    "blood_component_groups": {
+      "collection": "blood-component-groups"
+    },
+    "ComponentPrice": {
+      "type": "decimal",
+      "min": 0
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "cors": {
+        "enabled": false
+    },
+    "csrf": {
+        "enabled": false
+    },
+    "hsts": {
+        "enabled": false
+    },
+    "xss_filter": {
+        "enabled": false
+    }
+}

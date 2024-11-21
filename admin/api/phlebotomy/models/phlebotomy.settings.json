@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "phlebotomies",
+  "info": {
+    "name": "Phlebotomy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blood_collection_events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.phlebotomy-reason"
+    },
+    "normal_volume_min": {
+      "type": "decimal"
+    },
+    "normal_volume_max": {
+      "type": "decimal"
+    }
+  }
+}

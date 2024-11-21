@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reason_of_donations",
+  "info": {
+    "name": "Reason of Donation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_ar": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_donation_general_appearances",
+  "info": {
+    "name": "General appearance",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMENANT"
+      ],
+      "default": "TEMPORARY"
+    },
+    "deferral_days": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

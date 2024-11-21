@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_stores",
+  "info": {
+    "name": "MainStore",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MainStoreName": {
+      "type": "string"
+    },
+    "sub_stores": {
+      "collection": "sub-store"
+    }
+  }
+}

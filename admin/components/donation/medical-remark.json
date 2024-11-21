@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_donation_medical_remarks",
+  "info": {
+    "name": "Medical Remark",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "deferral_days": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 100
+    },
+    "deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ]
+    },
+    "medical_remark": {
+      "model": "medical-remark"
+    }
+  }
+}

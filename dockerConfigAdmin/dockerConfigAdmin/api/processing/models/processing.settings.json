@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "processings",
+  "info": {
+    "name": "processing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test1": {
+      "type": "string"
+    },
+    "tesd33333": {
+      "type": "string"
+    }
+  }
+}

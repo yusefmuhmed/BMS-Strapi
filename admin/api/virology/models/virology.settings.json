@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "virologies",
+  "info": {
+    "name": "Virology",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isbt_standard": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "virology_repetitions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "serology.virology-repetitions"
+    },
+    "nat_isbt": {
+      "type": "component",
+      "repeatable": true,
+      "component": "serology.nat-isbt"
+    },
+    "counseling_sample": {
+      "type": "boolean",
+      "default": true
+    },
+    "counseling_sample_rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "serology.counseling-sample-rules"
+    }
+  }
+}

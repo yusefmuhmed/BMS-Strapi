@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_serology_virology_repetitions",
+  "info": {
+    "name": "Virology Repetitions",
+    "icon": "arrow-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "r1": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ],
+      "required": true
+    },
+    "r2": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ]
+    },
+    "final": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ]
+    }
+  }
+}

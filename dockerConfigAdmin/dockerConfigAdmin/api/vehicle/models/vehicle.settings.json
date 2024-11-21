@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "Vehicle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    },
+    "center": {
+      "via": "vehicles",
+      "model": "center"
+    }
+  }
+}

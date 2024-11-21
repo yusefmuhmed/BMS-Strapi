@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_donation_medical_checkup_reasons",
+  "info": {
+    "name": "Medical Checkup Reason",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "deferral_days": {
+      "type": "integer"
+    },
+    "deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ]
+    },
+    "adverse_event": {
+      "unique": true,
+      "model": "adverse-event"
+    }
+  }
+}

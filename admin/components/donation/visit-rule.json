@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_donation_visit_rules",
+  "info": {
+    "name": "Visit Rule",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "days": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "donation_type": {
+      "model": "donation-type"
+    },
+    "sub_donation_type": {
+      "model": "sub-donation-type"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "MALE",
+        "FEMALE"
+      ],
+      "required": true
+    },
+    "previous_donation_type": {
+      "model": "donation-type"
+    },
+    "previous_sub_donation_type": {
+      "model": "sub-donation-type"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/medical-checkup",
+      "handler": "medical-checkup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/medical-checkup",
+      "handler": "medical-checkup.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/medical-checkup",
+      "handler": "medical-checkup.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

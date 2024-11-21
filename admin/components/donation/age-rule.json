@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_donation_age_rules",
+  "info": {
+    "name": "Age Rule",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "minimum_allowed_age": {
+      "type": "integer",
+      "min": 1,
+      "max": 100,
+      "default": 16,
+      "required": true
+    },
+    "maximum_allowed_age": {
+      "type": "integer",
+      "min": 1,
+      "max": 100,
+      "default": 60,
+      "required": true
+    }
+  }
+}

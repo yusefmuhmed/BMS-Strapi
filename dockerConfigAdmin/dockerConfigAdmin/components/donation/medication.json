@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_donation_medications",
+  "info": {
+    "name": "Medication",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "medication": {
+      "model": "medication"
+    },
+    "preferred_bag_type": {
+      "model": "bag-type"
+    }
+  }
+}

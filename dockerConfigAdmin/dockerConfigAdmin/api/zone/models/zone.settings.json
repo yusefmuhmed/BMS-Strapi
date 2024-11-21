@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zones",
+  "info": {
+    "name": "zone"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "places": {
+      "via": "zone",
+      "collection": "place"
+    }
+  }
+}

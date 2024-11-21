@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/medical-remarks",
+      "handler": "medical-remark.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medical-remarks/count",
+      "handler": "medical-remark.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medical-remarks/:id",
+      "handler": "medical-remark.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/medical-remarks",
+      "handler": "medical-remark.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/medical-remarks/:id",
+      "handler": "medical-remark.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/medical-remarks/:id",
+      "handler": "medical-remark.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_serology_nat_isbts",
+  "info": {
+    "name": "NAT ISBT",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "final_virology": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ],
+      "required": true
+    },
+    "final_nat": {
+      "type": "enumeration",
+      "enum": [
+        "NEGATIVE",
+        "POSITIVE"
+      ],
+      "required": true
+    },
+    "final": {
+      "type": "enumeration",
+      "enum": [
+        "NR",
+        "R",
+        "R3_R4"
+      ]
+    }
+  }
+}

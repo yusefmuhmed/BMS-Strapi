@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "inspection_visual_techniques",
+  "info": {
+    "name": "inspectionVisualTechniques"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "techniqueName": {
+      "type": "string"
+    }
+  }
+}

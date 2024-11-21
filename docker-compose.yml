@@ -1,0 +1,27 @@
+version: "3.8"
+services:   
+  backend:
+    user: root
+    image: ahmed1973/backend:6
+    ports:
+      - "3001:3001"
+    networks:
+      - aidea
+    restart: always
+    volumes:
+     - ./.env.production:/project/.env.production
+     - ./.env.development:/project/.env.development
+  frontend:
+    image: ahmed1973/backend:8
+    user: root
+    ports:
+         - "4000:4000"
+    volumes:
+      - ./.env.local:/my-project/packages/app/.env.local
+    networks:
+      - aidea
+    restart: always
+networks:
+  aidea:
+    name: aidea
+    driver: bridge

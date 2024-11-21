@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hospital",
+      "handler": "hospital.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hospital",
+      "handler": "hospital.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hospital",
+      "handler": "hospital.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

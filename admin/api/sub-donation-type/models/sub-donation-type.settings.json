@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_donation_types",
+  "info": {
+    "name": "Sub-Donation Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "is_center_only": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

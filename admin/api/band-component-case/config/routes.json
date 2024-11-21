@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/band-component-cases",
+      "handler": "band-component-case.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/band-component-cases/count",
+      "handler": "band-component-case.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/band-component-cases/:id",
+      "handler": "band-component-case.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/band-component-cases",
+      "handler": "band-component-case.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/band-component-cases/:id",
+      "handler": "band-component-case.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/band-component-cases/:id",
+      "handler": "band-component-case.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

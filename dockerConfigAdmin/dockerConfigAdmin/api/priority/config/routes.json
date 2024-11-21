@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/priority",
+      "handler": "priority.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/priority",
+      "handler": "priority.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/priority",
+      "handler": "priority.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

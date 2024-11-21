@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "hospitals",
+  "info": {
+    "name": "Hospital"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HospitalName": {
+      "type": "string"
+    }
+  }
+}

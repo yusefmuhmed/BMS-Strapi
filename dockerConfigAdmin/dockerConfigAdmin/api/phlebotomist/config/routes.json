@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/phlebotomists",
+      "handler": "phlebotomist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phlebotomists/count",
+      "handler": "phlebotomist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phlebotomists/:id",
+      "handler": "phlebotomist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/phlebotomists",
+      "handler": "phlebotomist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/phlebotomists/:id",
+      "handler": "phlebotomist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/phlebotomists/:id",
+      "handler": "phlebotomist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

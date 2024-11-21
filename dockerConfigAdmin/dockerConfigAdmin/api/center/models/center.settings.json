@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centers",
+  "info": {
+    "name": "Center",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    },
+    "vehicles": {
+      "via": "center",
+      "collection": "vehicle"
+    },
+    "users": {
+      "via": "center",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "employees": {
+      "via": "center",
+      "collection": "employee"
+    },
+    "NatLab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

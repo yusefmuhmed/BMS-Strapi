@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/virology",
+      "handler": "virology.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/virology",
+      "handler": "virology.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/virology",
+      "handler": "virology.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

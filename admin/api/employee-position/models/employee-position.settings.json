@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employee_positions",
+  "info": {
+    "name": "Employee Position",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_ar": {
+      "type": "string"
+    },
+    "employees": {
+      "via": "employee_position",
+      "collection": "employee"
+    }
+  }
+}

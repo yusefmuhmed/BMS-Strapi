@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_campaigns_campaign_data",
+  "info": {
+    "name": "Campaign Data",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "vehicle": {
+      "model": "vehicle"
+    },
+    "center": {
+      "model": "center"
+    },
+    "collection_site": {
+      "model": "collection-site"
+    },
+    "employees": {
+      "collection": "employee"
+    }
+  }
+}

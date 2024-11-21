@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "place"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location_type": {
+      "model": "location-type",
+      "via": "places"
+    },
+    "zone": {
+      "model": "zone",
+      "via": "places"
+    },
+    "gpsCoordinates": {
+      "type": "json"
+    }
+  }
+}

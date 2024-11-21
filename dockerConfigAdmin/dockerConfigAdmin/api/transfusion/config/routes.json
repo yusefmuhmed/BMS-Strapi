@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transfusion",
+      "handler": "transfusion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transfusion",
+      "handler": "transfusion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transfusion",
+      "handler": "transfusion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

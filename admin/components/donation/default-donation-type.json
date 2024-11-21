@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_donation_default_donation_types",
+  "info": {
+    "name": "Default Donation Type",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "donation_type": {
+      "model": "donation-type"
+    },
+    "sub_donation_type": {
+      "model": "sub-donation-type"
+    }
+  }
+}

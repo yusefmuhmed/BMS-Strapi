@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adverse_events",
+  "info": {
+    "name": "Adverse Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

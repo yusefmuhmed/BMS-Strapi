@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bag_types",
+  "info": {
+    "name": "Bag Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

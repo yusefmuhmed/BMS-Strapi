@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/phlebotomy",
+      "handler": "phlebotomy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/phlebotomy",
+      "handler": "phlebotomy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/phlebotomy",
+      "handler": "phlebotomy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

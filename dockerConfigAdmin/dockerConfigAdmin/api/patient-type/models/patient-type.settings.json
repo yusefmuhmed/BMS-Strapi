@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "patient_types",
+  "info": {
+    "name": "patientType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PatientTypeName": {
+      "type": "string"
+    }
+  }
+}

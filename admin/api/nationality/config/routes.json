@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nationalities",
+      "handler": "nationality.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nationalities/count",
+      "handler": "nationality.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nationalities/:id",
+      "handler": "nationality.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nationalities",
+      "handler": "nationality.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nationalities/:id",
+      "handler": "nationality.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nationalities/:id",
+      "handler": "nationality.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

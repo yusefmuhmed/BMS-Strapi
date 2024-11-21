@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "physicians",
+  "info": {
+    "name": "physician"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PhysicianName": {
+      "type": "string"
+    }
+  }
+}

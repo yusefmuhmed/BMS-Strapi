@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_donation_phlebotomy_reasons",
+  "info": {
+    "name": "Phlebotomy Reason",
+    "icon": "compress",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ]
+    },
+    "deferral_days": {
+      "type": "integer",
+      "min": 1
+    },
+    "blood_collection_event": {
+      "model": "blood-collection-event"
+    }
+  }
+}

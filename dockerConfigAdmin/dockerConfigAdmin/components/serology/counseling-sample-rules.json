@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_serology_counseling_sample_rules",
+  "info": {
+    "name": "Counseling Sample Rules",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "r1": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ]
+    },
+    "r2": {
+      "type": "enumeration",
+      "enum": [
+        "R",
+        "NR"
+      ]
+    },
+    "donor": {
+      "type": "enumeration",
+      "enum": [
+        "PERMANENTLY_DEFERRED",
+        "ELIGIBLE"
+      ]
+    }
+  }
+}

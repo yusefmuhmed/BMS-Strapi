@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sub-donation-types",
+      "handler": "sub-donation-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sub-donation-types/count",
+      "handler": "sub-donation-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sub-donation-types/:id",
+      "handler": "sub-donation-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sub-donation-types",
+      "handler": "sub-donation-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sub-donation-types/:id",
+      "handler": "sub-donation-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sub-donation-types/:id",
+      "handler": "sub-donation-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

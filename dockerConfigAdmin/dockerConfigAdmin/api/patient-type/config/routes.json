@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/patient-type",
+      "handler": "patient-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/patient-type",
+      "handler": "patient-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/patient-type",
+      "handler": "patient-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

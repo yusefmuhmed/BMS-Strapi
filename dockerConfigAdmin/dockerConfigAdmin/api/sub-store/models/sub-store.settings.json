@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_stores",
+  "info": {
+    "name": "SubStore",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SubStoreName": {
+      "type": "string"
+    }
+  }
+}

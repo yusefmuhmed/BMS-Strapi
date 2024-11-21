@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "transfusions",
+  "info": {
+    "name": "transfusion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TransfusionName": {
+      "type": "string"
+    }
+  }
+}

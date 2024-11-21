@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inspection-visual-techniques",
+      "handler": "inspection-visual-techniques.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inspection-visual-techniques",
+      "handler": "inspection-visual-techniques.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inspection-visual-techniques",
+      "handler": "inspection-visual-techniques.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

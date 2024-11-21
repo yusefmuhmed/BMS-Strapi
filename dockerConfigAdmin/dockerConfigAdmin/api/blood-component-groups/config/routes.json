@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blood-component-groups",
+      "handler": "blood-component-groups.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-component-groups/count",
+      "handler": "blood-component-groups.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-component-groups/:id",
+      "handler": "blood-component-groups.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blood-component-groups",
+      "handler": "blood-component-groups.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blood-component-groups/:id",
+      "handler": "blood-component-groups.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blood-component-groups/:id",
+      "handler": "blood-component-groups.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

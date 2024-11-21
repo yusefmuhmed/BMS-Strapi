@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apheresis_machines",
+  "info": {
+    "name": "Apheresis Machine",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string"
+    }
+  }
+}

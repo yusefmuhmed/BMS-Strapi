@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blood_component_groups",
+  "info": {
+    "name": "Blood Component Groups",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Code": {
+      "type": "string",
+      "required": false
+    },
+    "Description": {
+      "type": "text"
+    },
+    "SortKey": {
+      "type": "integer",
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_donation_pulse_statuses",
+  "info": {
+    "name": "pulse status",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "deferral_action": {
+      "type": "enumeration",
+      "enum": [
+        "TEMPORARY",
+        "PERMANENT"
+      ],
+      "default": "TEMPORARY"
+    },
+    "deferral_days": {
+      "type": "integer",
+      "min": 0
+    }
+  }
+}

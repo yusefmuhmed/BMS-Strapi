@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "medical_checkups",
+  "info": {
+    "name": "Medical Checkup",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "systolic": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "diastolic": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "hemoglobin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "hematocrit": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "pulse_rate": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "temperature": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "weight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.medical-checkup-range-rule"
+    },
+    "adverse_event_rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.medical-checkup-reason"
+    },
+    "medication_rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.medication"
+    },
+    "band_component_case_rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.band-component-case"
+    },
+    "medical_remark_rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.medical-remark"
+    },
+    "pulse_status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.pulse-status"
+    },
+    "general_appearance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.general-appearance"
+    }
+  }
+}

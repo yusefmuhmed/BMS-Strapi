@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaigns",
+  "info": {
+    "name": "Campaign",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barcode_type": {
+      "type": "enumeration",
+      "enum": [
+        "SCANNED",
+        "GENERATED"
+      ],
+      "default": "GENERATED"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "expected_donor_count": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "start_date": {
+      "type": "datetime",
+      "unique": true,
+      "required": true
+    },
+    "end_date": {
+      "type": "datetime",
+      "unique": true,
+      "private": false,
+      "required": true
+    },
+    "campaign_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "campaigns.campaign-data",
+      "required": true
+    }
+  }
+}

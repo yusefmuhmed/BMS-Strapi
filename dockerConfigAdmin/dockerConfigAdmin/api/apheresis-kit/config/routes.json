@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apheresis-kits",
+      "handler": "apheresis-kit.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apheresis-kits/count",
+      "handler": "apheresis-kit.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apheresis-kits/:id",
+      "handler": "apheresis-kit.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apheresis-kits",
+      "handler": "apheresis-kit.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/apheresis-kits/:id",
+      "handler": "apheresis-kit.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/apheresis-kits/:id",
+      "handler": "apheresis-kit.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

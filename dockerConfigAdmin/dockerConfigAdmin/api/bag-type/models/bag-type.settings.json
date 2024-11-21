@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bag_types",
+  "info": {
+    "name": "Bag Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_ar": {
+      "type": "string",
+      "required": true
+    },
+    "Code": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Anticoagulant": {
+      "type": "integer"
+    },
+    "BagWeight": {
+      "type": "float"
+    },
+    "MaximumVolume": {
+      "type": "float"
+    },
+    "MinimumVolume": {
+      "type": "float"
+    },
+    "LowVolume": {
+      "type": "float"
+    },
+    "Expiration": {
+      "type": "integer"
+    },
+    "BloodSeparation": {
+      "type": "enumeration",
+      "enum": [
+        "Manual",
+        "Auto"
+      ],
+      "default": "Manual"
+    },
+    "Manufacturer": {
+      "type": "text"
+    },
+    "SortKey": {
+      "type": "integer"
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "LowVolumeComponent": {
+      "model": "blood-component"
+    },
+    "OriginalComponent": {
+      "model": "blood-component"
+    },
+    "BloodComponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "proccessing.blood-component"
+    }
+  }
+}

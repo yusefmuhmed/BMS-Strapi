@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "registration_s",
+  "info": {
+    "name": "Registration ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "male_age_rules": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.age-rule"
+    },
+    "female_age_rules": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.age-rule"
+    },
+    "intervals_between_donations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "donation.visit-rule"
+    },
+    "default_donation_type": {
+      "type": "component",
+      "repeatable": false,
+      "component": "donation.default-donation-type"
+    }
+  }
+}

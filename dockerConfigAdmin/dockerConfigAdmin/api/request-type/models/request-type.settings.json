@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "request_types",
+  "info": {
+    "name": "requestType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "requestTypeName": {
+      "type": "string"
+    }
+  }
+}

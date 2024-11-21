@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blood-collection-events",
+      "handler": "blood-collection-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-collection-events/count",
+      "handler": "blood-collection-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-collection-events/:id",
+      "handler": "blood-collection-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blood-collection-events",
+      "handler": "blood-collection-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blood-collection-events/:id",
+      "handler": "blood-collection-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blood-collection-events/:id",
+      "handler": "blood-collection-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

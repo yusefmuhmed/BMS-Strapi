@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "second_name": {
+      "type": "string",
+      "required": true
+    },
+    "third_name": {
+      "type": "string",
+      "required": true
+    },
+    "fourth_name": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "MALE",
+        "FEMALE"
+      ],
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile_phone": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "center": {
+      "via": "employees",
+      "model": "center"
+    },
+    "employee_position": {
+      "via": "employees",
+      "model": "employee-position"
+    }
+  }
+}
