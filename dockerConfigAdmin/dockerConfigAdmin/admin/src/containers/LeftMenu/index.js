@@ -41,27 +41,9 @@ const LeftMenu = ({ shouldUpdateStrapi, version, plugins, setUpdateMenu }) => {
   const filteredCampaignSectionLinks = campaignSectionLinks.filter(
     ({ isDisplayed }) => isDisplayed
   );
-  const filteredCampaignMetaSectionLinks = [
-    {
-      name: "Zone",
-      to: "/content-manager/collectionType/application::zone.zone",
-      isDisplayed: true,
-    },
-    {
-      name: "Place",
-      to: "/content-manager/collectionType/application::place.place",
-      isDisplayed: true,
-    },
-    {
-      name: "Location Type",
-      to: "/content-manager/collectionType/application::location-type.location-type",
-      isDisplayed: true,
-    },
-  ]
-
-  console.log(filteredCampaignMetaSectionLinks);
-
-
+  const filteredCampaignMetaSectionLinks = campaignMetaSectionLinks.filter(
+    ({ isDisplayed }) => isDisplayed
+  );
   const filteredDonationSectionLinks = donationSectionLinks.filter(
     ({ isDisplayed }) => isDisplayed
   );
@@ -99,7 +81,6 @@ const LeftMenu = ({ shouldUpdateStrapi, version, plugins, setUpdateMenu }) => {
           />
         )}
         {filteredCampaignMetaSectionLinks.length > 0 && (
-          
           <LeftMenuLinksSection
             section="campaignsMeta"
             name="campaignsMeta"
@@ -142,7 +123,7 @@ const LeftMenu = ({ shouldUpdateStrapi, version, plugins, setUpdateMenu }) => {
             location={location}
           />
         )}
-        {filteredCollectionTypeLinks.length > 0 && (
+        {/* {filteredCollectionTypeLinks.length > 0 && (
           <LeftMenuLinksSection
             section="collectionType"
             name="collectionType"
@@ -160,9 +141,9 @@ const LeftMenu = ({ shouldUpdateStrapi, version, plugins, setUpdateMenu }) => {
             location={location}
             searchable
           />
-        )}
+        )} */}
 
-        {pluginsSectionLinks.length > 0 && (
+        {/* {pluginsSectionLinks.length > 0 && (
           <LeftMenuLinksSection
             section="plugins"
             name="plugins"
@@ -171,7 +152,7 @@ const LeftMenu = ({ shouldUpdateStrapi, version, plugins, setUpdateMenu }) => {
             searchable={false}
             emptyLinksListMessage="app.components.LeftMenuLinkContainer.noPluginsInstalled"
           />
-        )}
+        )} */}
         {generalSectionLinks.length > 0 && (
           <LeftMenuLinksSection
             section="general"

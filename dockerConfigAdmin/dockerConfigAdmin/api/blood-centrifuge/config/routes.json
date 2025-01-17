@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blood-centrifuges",
+      "handler": "blood-centrifuge.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-centrifuges/count",
+      "handler": "blood-centrifuge.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blood-centrifuges/:id",
+      "handler": "blood-centrifuge.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blood-centrifuges",
+      "handler": "blood-centrifuge.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blood-centrifuges/:id",
+      "handler": "blood-centrifuge.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blood-centrifuges/:id",
+      "handler": "blood-centrifuge.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

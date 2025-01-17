@@ -5,14 +5,15 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
-        host: env('DATABASE_HOST', '127.0.0.1'),
+        host: env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'aidea_admin_db'),
-        username: env('DATABASE_USERNAME', 'postgres'),
-        password: env('DATABASE_PASSWORD', 'admin'),
+        database: env('DATABASE_NAME', 'strapi'),        // Changed to match Docker
+        username: env('DATABASE_USERNAME', 'strapi2'),   // Changed to match Docker
+        password: env('DATABASE_PASSWORD', 'strapi'),    // Changed to match Docker
       },
       options: {
-        useNullAsDefault: true, pool: {
+        useNullAsDefault: true,
+        pool: {
           max: 50,
         },
       },

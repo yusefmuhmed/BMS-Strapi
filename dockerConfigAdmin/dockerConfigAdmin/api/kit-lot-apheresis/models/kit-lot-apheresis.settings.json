@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kit_lot_apheresis_s",
+  "info": {
+    "name": "Kit Lot (Apheresis)",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kitLotNumber": {
+      "type": "string"
+    },
+    "packetNumber": {
+      "type": "biginteger"
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "units": {
+      "type": "integer"
+    },
+    "makeAsDefault": {
+      "type": "boolean"
+    }
+  }
+}

@@ -31,6 +31,21 @@
     },
     "RBC_Loss": {
       "type": "float"
+    },
+    "apheresis_kit": {
+      "model": "apheresis-kit"
+    },
+    "processedBlood": {
+      "type": "float"
+    },
+    "plasmaVolume": {
+      "type": "float"
+    },
+    "numberOfCycles": {
+      "type": "float"
+    },
+    "anticoaulantLotNumber": {
+      "type": "biginteger"
     }
   }
 }

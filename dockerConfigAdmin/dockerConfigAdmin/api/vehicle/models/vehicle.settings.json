@@ -23,6 +23,9 @@
     "center": {
       "via": "vehicles",
       "model": "center"
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

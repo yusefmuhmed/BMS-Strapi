@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/barcode-ranges",
+      "handler": "barcode-range.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/barcode-ranges/count",
+      "handler": "barcode-range.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/barcode-ranges/:id",
+      "handler": "barcode-range.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/barcode-ranges",
+      "handler": "barcode-range.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/barcode-ranges/:id",
+      "handler": "barcode-range.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/barcode-ranges/:id",
+      "handler": "barcode-range.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

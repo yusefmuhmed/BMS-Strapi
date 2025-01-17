@@ -45,6 +45,13 @@
       "repeatable": false,
       "component": "campaigns.campaign-data",
       "required": true
+    },
+    "Time": {
+      "type": "enumeration",
+      "enum": [
+        "AM",
+        "PM"
+      ]
     }
   }
 }

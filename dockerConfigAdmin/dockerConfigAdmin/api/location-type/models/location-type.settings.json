@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "location_types",
+  "collectionName": "campaign_types",
   "info": {
-    "name": "Location Type"
+    "name": "Campaign Type",
+    "description": ""
   },
   "options": {
     "increments": true,

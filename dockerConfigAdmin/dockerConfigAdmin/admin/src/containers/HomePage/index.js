@@ -25,8 +25,8 @@ const HomePage = ({ history: { push } }) => {
   } = useModels();
 
   const hasAlreadyCreatedContentTypes = useMemo(() => {
-    // const filterContentTypes = (contentTypes) =>
-    //   contentTypes.filter((c) => c.isDisplayed);
+    const filterContentTypes = (contentTypes) =>
+      contentTypes.filter((c) => c.isDisplayed);
 
     return (
       filterContentTypes(collectionTypes).length > 1 ||

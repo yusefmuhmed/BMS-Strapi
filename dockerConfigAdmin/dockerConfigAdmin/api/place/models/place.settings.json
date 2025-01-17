@@ -15,8 +15,8 @@
       "type": "string"
     },
     "location_type": {
-      "model": "location-type",
-      "via": "places"
+      "via": "places",
+      "model": "location-type"
     },
     "zone": {
       "model": "zone",

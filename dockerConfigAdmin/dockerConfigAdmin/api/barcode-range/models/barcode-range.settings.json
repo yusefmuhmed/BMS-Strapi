@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barcode_ranges",
+  "info": {
+    "name": "Barcode Range"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startWith": {
+      "type": "string"
+    }
+  }
+}

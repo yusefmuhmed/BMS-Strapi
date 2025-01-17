@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kit-lot-aphereses",
+      "handler": "kit-lot-apheresis.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kit-lot-aphereses/count",
+      "handler": "kit-lot-apheresis.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kit-lot-aphereses/:id",
+      "handler": "kit-lot-apheresis.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kit-lot-aphereses",
+      "handler": "kit-lot-apheresis.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kit-lot-aphereses/:id",
+      "handler": "kit-lot-apheresis.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kit-lot-aphereses/:id",
+      "handler": "kit-lot-apheresis.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

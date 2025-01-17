@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kit-lot-whole-bloods",
+      "handler": "kit-lot-whole-blood.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kit-lot-whole-bloods/count",
+      "handler": "kit-lot-whole-blood.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kit-lot-whole-bloods/:id",
+      "handler": "kit-lot-whole-blood.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kit-lot-whole-bloods",
+      "handler": "kit-lot-whole-blood.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kit-lot-whole-bloods/:id",
+      "handler": "kit-lot-whole-blood.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kit-lot-whole-bloods/:id",
+      "handler": "kit-lot-whole-blood.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

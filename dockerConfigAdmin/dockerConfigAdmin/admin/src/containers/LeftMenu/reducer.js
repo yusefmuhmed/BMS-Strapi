@@ -16,7 +16,7 @@ const initialState = {
       icon: "list",
       label: "app.components.LeftMenuLinkContainer.listPlugins",
       destination: "/list-plugins",
-      isDisplayed: true,
+      isDisplayed: false,
       permissions: adminPermissions.marketplace.main,
       notificationsCount: 0,
     },
@@ -24,14 +24,14 @@ const initialState = {
       icon: "shopping-basket",
       label: "app.components.LeftMenuLinkContainer.installNewPlugin",
       destination: "/marketplace",
-      isDisplayed: true,
+      isDisplayed: false,
       permissions: adminPermissions.marketplace.main,
       notificationsCount: 0,
     },
     {
       icon: "cog",
       label: "app.components.LeftMenuLinkContainer.settings",
-      isDisplayed: true,
+      isDisplayed: false,
       destination: SETTINGS_BASE_URL,
       // Permissions of this link are retrieved in the init phase
       // using the settings menu
@@ -69,7 +69,9 @@ const reducer = (state = initialState, action) =>
             x.label.includes("Collection Site") |
             x.label.includes("Vehicle") |
             x.label.includes("Employee") |
-            x.label.includes("Zone")
+            x.label.includes("place") |
+            x.label.includes("zone") |
+            x.label.includes("Campaign Type")
         );
 
         // Donation Meta
@@ -85,6 +87,8 @@ const reducer = (state = initialState, action) =>
         const donationMeta = authorizedCtLinks.filter(
           (x) =>
             x.label.includes("Type") |
+            x.label.includes("Blood") |
+            x.label.includes("Barcode") |
             x.label.includes("Govern") |
             x.label.includes("Adverse") |
             x.label.includes("Medication") |
@@ -98,7 +102,8 @@ const reducer = (state = initialState, action) =>
             x.label.includes("Reason of Donation") |
             x.label.includes("Social Status") |
             x.label.includes("Apheresis Machine") |
-            x.label.includes('Apheresis Kit')
+            x.label.includes('Apheresis Kit') |
+            x.label.includes('Kit Lot')
         );
         // Serology
         const samples = authorizedStLinks.filter((x) =>

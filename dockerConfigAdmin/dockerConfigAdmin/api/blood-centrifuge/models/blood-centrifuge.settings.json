@@ -1,24 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "cities",
+  "collectionName": "blood_centrifuges",
   "info": {
-    "name": "City",
-    "description": ""
+    "name": "Blood Centrifuge"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title_en": {
-      "type": "string"
-    },
     "title_ar": {
       "type": "string"
     },
-    "CityCode": {
+    "title_en": {
       "type": "string"
     }
   }
