@@ -60,7 +60,7 @@ const reducer = (state = initialState, action) =>
         const users = authorizedCtLinks.filter((x) => x.label.includes("User"));
         // Promotion Campaigns
         const campaign = authorizedCtLinks.filter((x) =>
-          x.label.includes("Campaign")
+          x.label.includes("Campaigns")
         );
         // Promotion Meta
         const promotion = authorizedCtLinks.filter(
@@ -69,8 +69,8 @@ const reducer = (state = initialState, action) =>
             x.label.includes("Collection Site") |
             x.label.includes("Vehicle") |
             x.label.includes("Employee") |
-            x.label.includes("place") |
-            x.label.includes("zone") |
+            x.label.includes("Place") |
+            x.label.includes("Zone") |
             x.label.includes("Campaign Type")
         );
 

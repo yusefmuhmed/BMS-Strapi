@@ -3,7 +3,12 @@ import en from './en.json';
 
 const trads = {
   ar,
-  en,
+  en
+};
+
+export const languageNativeNames = {
+  ar: 'العربية',
+  en: 'English'
 };
 
 export default trads;
